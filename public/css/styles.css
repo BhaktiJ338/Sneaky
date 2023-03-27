@@ -1,0 +1,84 @@
+:root{
+  --fs-xl: 5rem;
+  --fs-600: 4rem;
+  --fs-400: 2rem;
+}
+
+body {
+  background-color: #fff;
+  color: #333a46;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.jumbotron{
+  background-color: #fff;
+}
+
+footer{
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+}
+
+.btn-dark{
+  background-color: #333a46;
+}
+
+
+.secret-text {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: fit-content;
+  text-align: center;
+  font-size: var(--fs-400);
+  color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+
+@media (max-width: 1200px) {
+  .display-3{
+    font-size: 10rem;
+  }
+  .btn-group-lg>.btn, .btn-lg, .lead, .btn{
+    font-size: 3rem;
+  }
+  .secret-heading{
+    font-size: 4rem;
+  }
+  h1{
+    font-size: 5rem;
+  }
+  .card-body{
+    font-size: 3.5rem;
+  }
+  .form-control{
+    height: calc(2.25rem + 50px);
+    font-size: 2.5rem;
+  }
+  i>.fab{
+    padding: auto;
+  }
+  :root {
+    --fs-xl:8rem;
+    --fs-600: 4rem;
+    --fs-400: 3.5rem;
+    --fs-500: 3.5rem;
+  }
+  footer{
+    margin-bottom: 7%;
+  }
+
+  .container{
+    margin-bottom: 6%;
+  }
+}
+
