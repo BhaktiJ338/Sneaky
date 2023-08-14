@@ -60,7 +60,7 @@ passport.deserializeUser(function(user, cb) {
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: 'https://sneaky-production.up.railway.app/auth/google/secrets'
+    callbackURL: 'https://sneaky-p7ed.onrender.com/auth/google/secrets'
   },
   async function (accessToken, refreshToken, profile, done) {
     try {
@@ -85,7 +85,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
     clientID: process.env.FACEBOOK_APP_ID,
     clientSecret: process.env.FACEBOOK_APP_SECRET,
-    callbackURL: "https://sneaky-production.up.railway.app/auth/facebook/secrets"
+    callbackURL: "https://sneaky-p7ed.onrender.com/auth/facebook/secrets"
   },
   function(accessToken, refreshToken, profile, cb) {
     User.findOrCreate({ facebookId: profile.id }, function (err, user) {
